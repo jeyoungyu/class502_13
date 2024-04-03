@@ -1,7 +1,17 @@
-import MyComponent from './components/MyComponent';
+//import MyComponent from './components/MyComponent2';
+//import Counter from "./components/Counter2";
+import Profile from "./components/profile";
 
 const App = () => {
-  return <MyComponent name="서이름" num="3" />;
+  return <Profile />
+  /*
+  return (
+    <MyComponent num={0} >;
+            <h1>반갑습니다</h1>
+            </MyComponent>
+            );
+            */
+
 };
 
 export default App;
