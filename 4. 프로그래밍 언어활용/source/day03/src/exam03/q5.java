@@ -1,20 +1,30 @@
 package exam03;
 
+import java.util.Arrays;
+
 public class q5 {
     public static void main(String[] args) {
         int[] nums = {21, 22, 30, 11, 99, 31};
 
+        //int index = nums.length - 2 - 1;
 
-        for (int i = 0; i <= nums.length; i++) {
-            for (int j = nums.length - 1; j <= nums.length; j--) {
-
-
-                System.out.println(nums[j]);
-
-            }
-
+        for (int i = 0; i < nums.length / 2; i++) {
+            int temp = nums[i];
+            int index = nums.length - i - 1;
+            nums[i] = nums[index];
+            nums[index] = temp;
+            System.out.println(Arrays.toString(nums));
         }
     }
-    }
+}
+
+
+      /* for (int i = nums.length-1 ; i >= 0; i--) {
+           System.out.println(nums[i]);
+       }
+    }*/
+
+
+
 
 
