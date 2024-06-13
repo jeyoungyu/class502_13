@@ -9,12 +9,11 @@
 <%
     int num1 = 100;
     int num2 = 200;
-    int result = num1 + num2;
-    //int result = add(num1 , num2);
+    //int result = num1 + num2;
+    int result = add(num1, num2);
     System.out.println(result);
-
     /*
-    int minus(int num1 , int num2) {
+    int minus(int num1, int num2) {
         return num1 - num2;
     }
     */
@@ -24,6 +23,7 @@
     int num1 = 10;
     int num2 = 20;
 
-    //int add(int num1 , int num2) {
-       //     return num1+num2;
+    int add(int num1, int num2) {
+        return num1 + num2;
+    }
 %>
