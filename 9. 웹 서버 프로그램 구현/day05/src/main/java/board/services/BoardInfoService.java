@@ -1,4 +1,4 @@
-package board.sevices;
+package board.services;
 
 import board.entities.BoardData;
 
@@ -9,12 +9,12 @@ import java.util.stream.IntStream;
 public class BoardInfoService {
 
     public List<BoardData> getList() {
-        //게시글 목록 조회 로직 ....
+        // 게시글 목록 조회 로직 ....
 
-        List<BoardData> items = IntStream.rangeClosed(1,10)
+        List<BoardData> items = IntStream.rangeClosed(1, 10)
                 .mapToObj(i -> BoardData.builder()
                         .seq(i)
-                        .subject("제목" + i )
+                        .subject("제목" + i)
                         .content("내용" + i)
                         .poster("작성자" + i)
                         .regDt(LocalDateTime.now())
@@ -22,5 +22,6 @@ public class BoardInfoService {
                 .toList();
 
         return items;
+
     }
 }
